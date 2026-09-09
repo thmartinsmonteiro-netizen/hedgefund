@@ -1,4 +1,0 @@
-ticker,yahoo_symbol,name,ccy,sleeve,country,lens,target_price,catalyst,catalyst_date,kill_criteria,status
-EYDAP:ATSE,EYDAP.AT,Athens Water Supply & Sewerage,EUR,Satellite,Greece,5,15.30,First H1 under RAAEY revenue cap,2026-09-30,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27,paper
-SAPR11:B3,SAPR11.SA,Sanepar,BRL,Satellite,Brazil,5,,Court ruling on AGEPAR precatorio decision,,n/a until dated,watchlist
-LIGT3:B3,LIGT3.SA,Light S.A.,BRL,Satellite,Brazil,5,,RJ closure + capitalisation; emergence ND/EBITDA < 2.5x,,n/a,gated
