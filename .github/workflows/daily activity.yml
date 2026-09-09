@@ -1,0 +1,56 @@
+name: daily activity
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"   # 18:30 Sao Paulo, weekdays
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  mark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Normalise layout (one-time, self-healing)
+        run: |
+          set -e
+          moved=0
+          mv_into () { d="$1"; shift; for f in "$@"; do if [ -f "$f" ]; then mkdir -p "$d"; git mv -f "$f" "$d/$f"; moved=1; fi; done; }
+          mv_into scripts  mark.py nav.py build_xlsx.py
+          mv_into data     assumptions.json positions.csv trades.csv prices.csv cashflows.csv pipeline.csv rejected.csv closed.csv
+          mv_into mandate  mandate.md screens.md holdings.md memo-template.md
+          mv_into routines daily-mark.md weekly-memo.md
+          for f in 20??-W??.md; do [ -f "$f" ] && { mkdir -p memos; git mv -f "$f" "memos/$f"; moved=1; }; done
+          [ -f download ] && { git rm -q -f download; moved=1; }
+          if [ "$moved" = 1 ]; then
+            git config user.name "paper-fund-bot"; git config user.email "bot@users.noreply.github.com"
+            git commit -m "normalise layout into folders"; git push
+          fi
+          test -f scripts/mark.py && test -f data/prices.csv
+
+      - run: pip install -r requirements.txt
+
+      - name: Mark prices (exit 3 = marked with gaps, still commits)
+        id: mark
+        run: |
+          set +e
+          python scripts/mark.py
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" -ne 0 ] && [ "$code" -ne 3 ]; then exit "$code"; fi
+
+      - run: python scripts/nav.py
+      - run: python scripts/build_xlsx.py
+
+      - name: Commit
+        run: |
+          git config user.name "paper-fund-bot"; git config user.email "bot@users.noreply.github.com"
+          git add data/prices.csv reports/
+          git diff --cached --quiet && echo "nothing to commit" || git commit -m "mark $(date -u +%F) (gaps=${{ steps.mark.outputs.code }})"
+          git push
+
+      - name: Warn on gaps
+        if: steps.mark.outputs.code == '3'
+        run: echo "::warning::Some symbols had no close today; see reports/summary.md flags"
