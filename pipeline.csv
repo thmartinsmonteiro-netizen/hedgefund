@@ -1,0 +1,4 @@
+name,ticker,lens,logged,price_at_log,ccy,target,catalyst,catalyst_date,kill_criteria,gate_date,status,memo_ref,outcome
+EYDAP,EYDAP:ATSE,5,2026-09-09,12.02,EUR,15.30,First H1 under RAAEY revenue cap,2026-09-30,H1 rev < EUR200m; pricing reopened; net debt before FY27,W40,paper position,2026-W37.md,
+Sanepar,SAPR11:B3,5,2026-09-09,35.24,BRL,,Court ruling on AGEPAR precatorio decision; privatisation optionality,,n/a until dated,,watchlist,2026-W37.md,
+Light,LIGT3:B3,5,2026-09-09,3.51,BRL,,RJ closure + capitalisation; emergence leverage < 2.5x,,n/a,,gated,2026-W37.md,
