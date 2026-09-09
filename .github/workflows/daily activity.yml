@@ -1,10 +1,12 @@
 name: daily activity
+name: daily-mark
 on:
   schedule:
-    - cron: "30 21 * * 1-5"   # 18:30 Sao Paulo, weekdays
+    - cron: "30 21 * * 1-5"
   workflow_dispatch:
 permissions:
   contents: write
+concurrency: { group: fund-writes, cancel-in-progress: false }
 jobs:
   mark:
     runs-on: ubuntu-latest
@@ -13,21 +15,20 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
-      - name: Normalise layout (one-time, self-healing)
+      - name: Normalise layout (self-healing)
         run: |
           set -e
+          git config user.name "paper-fund-bot"; git config user.email "bot@users.noreply.github.com"
           moved=0
           mv_into () { d="$1"; shift; for f in "$@"; do if [ -f "$f" ]; then mkdir -p "$d"; git mv -f "$f" "$d/$f"; moved=1; fi; done; }
-          mv_into scripts  mark.py nav.py build_xlsx.py
+          mv_into scripts  mark.py nav.py build_xlsx.py render_memo.py
           mv_into data     assumptions.json positions.csv trades.csv prices.csv cashflows.csv pipeline.csv rejected.csv closed.csv
-          mv_into mandate  mandate.md screens.md holdings.md memo-template.md
+          mv_into mandate  mandate.md screens.md holdings.md memo-template.md amendments.md
           mv_into routines daily-mark.md weekly-memo.md
+          mv_into .github/workflows weekly-report.yml
           for f in 20??-W??.md; do [ -f "$f" ] && { mkdir -p memos; git mv -f "$f" "memos/$f"; moved=1; }; done
           [ -f download ] && { git rm -q -f download; moved=1; }
-          if [ "$moved" = 1 ]; then
-            git config user.name "paper-fund-bot"; git config user.email "bot@users.noreply.github.com"
-            git commit -m "normalise layout into folders"; git push
-          fi
+          if [ "$moved" = 1 ]; then git commit -m "normalise layout into folders"; git pull --rebase; git push; fi
           test -f scripts/mark.py && test -f data/prices.csv
 
       - run: pip install -r requirements.txt
@@ -49,6 +50,7 @@ jobs:
           git config user.name "paper-fund-bot"; git config user.email "bot@users.noreply.github.com"
           git add data/prices.csv reports/
           git diff --cached --quiet && echo "nothing to commit" || git commit -m "mark $(date -u +%F) (gaps=${{ steps.mark.outputs.code }})"
+          git pull --rebase
           git push
 
       - name: Warn on gaps
