@@ -1,5 +1,4 @@
 name: daily activity
-name: daily-mark
 on:
   schedule:
     - cron: "30 21 * * 1-5"
