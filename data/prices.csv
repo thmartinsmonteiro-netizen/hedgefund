@@ -1,9 +1,9 @@
 date,symbol,close,source,status
 2026-09-09,BRLUSD=X,0.195979,yfinance,ok
-2026-09-09,CHFUSD=X,1.235132,yfinance,ok
-2026-09-09,EURUSD=X,1.16428,yfinance,ok
+2026-09-09,CHFUSD=X,1.234919,yfinance,ok
+2026-09-09,EURUSD=X,1.164009,yfinance,ok
 2026-09-09,EYDAP.AT,12.02,yfinance,ok
-2026-09-09,GBPUSD=X,1.356043,yfinance,ok
+2026-09-09,GBPUSD=X,1.355693,yfinance,ok
 2026-09-09,IWDA.L,146.559998,yfinance,ok
 2026-09-09,LIGT3.SA,3.51,yfinance,ok
-2026-09-09,SAPR11.SA,35.18,yfinance,ok
+2026-09-09,SAPR11.SA,35.150002,yfinance,ok
