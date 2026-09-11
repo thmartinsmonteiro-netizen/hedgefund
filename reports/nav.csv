@@ -1,3 +1,4 @@
 date,cash_usd,positions_mv_usd,interest_usd,net_flows_usd,nav_usd,open_positions,core_bench_cum,cash_bench_cum,flags,daily_return,cum_return,drawdown,alpha_vs_core,alpha_vs_cash
 2026-09-09,92007.99,0.0,0.0,-7992.01,92007.99,1,-0.0035,0.0,EYDAP:ATSE:NO_PRICE,0.0,-0.07992,0.0,-0.07642,-0.07992
 2026-09-10,92018.07,0.0,10.08,0.0,92018.07,1,-0.008463,0.000107,EYDAP:ATSE:NO_PRICE,0.00011,-0.079819,0.0,-0.071356,-0.079926
+2026-09-11,92028.16,0.0,10.08,0.0,92028.16,1,-0.00078,0.000215,EYDAP:ATSE:NO_PRICE,0.00011,-0.079718,0.0,-0.078938,-0.079933

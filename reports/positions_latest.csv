@@ -1,4 +1,4 @@
 ticker,name,instrument,status,sleeve,country,qty,cost_basis_usd,last_close,close_date,mv_usd,pnl_usd,pnl_pct,pct_nav,target_price,upside_to_target,catalyst_date,days_to_catalyst,kill_criteria
-EYDAP:ATSE,Athens Water Supply & Sewerage,equity,paper,Satellite,Greece,569,7992.01,,,,,,,15.3,,2026-09-30,20.0,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27
-SAPR11:B3,Sanepar,equity,watchlist,Satellite,Brazil,0,,35.810001,2026-09-10,,,,,,,,,n/a until dated
-LIGT3:B3,Light S.A.,equity,gated,Satellite,Brazil,0,,3.75,2026-09-10,,,,,,,,,
+EYDAP:ATSE,Athens Water Supply & Sewerage,equity,paper,Satellite,Greece,569,7992.01,,,,,,,15.3,,2026-09-30,19.0,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27
+SAPR11:B3,Sanepar,equity,watchlist,Satellite,Brazil,0,,34.560001,2026-09-11,,,,,,,,,n/a until dated
+LIGT3:B3,Light S.A.,equity,gated,Satellite,Brazil,0,,3.77,2026-09-11,,,,,,,,,
