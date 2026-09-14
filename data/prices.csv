@@ -23,3 +23,11 @@ date,symbol,close,source,status
 2026-09-11,IWDA.L,146.960007,yfinance,ok
 2026-09-11,LIGT3.SA,3.77,yfinance,ok
 2026-09-11,SAPR11.SA,34.560001,yfinance,ok
+2026-09-14,BRLUSD=X,0.194322,yfinance,ok
+2026-09-14,CHFUSD=X,1.22471,yfinance,ok
+2026-09-14,EURUSD=X,1.155402,yfinance,ok
+2026-09-14,EYDAP.AT,,yfinance-no-close-on-2026-09-14,missing
+2026-09-14,GBPUSD=X,1.34991,yfinance,ok
+2026-09-14,IWDA.L,145.960007,yfinance,ok
+2026-09-14,LIGT3.SA,3.75,yfinance,ok
+2026-09-14,SAPR11.SA,34.740002,yfinance,ok
