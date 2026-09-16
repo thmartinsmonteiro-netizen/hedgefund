@@ -1,6 +1,6 @@
-# Paper fund summary, 2026-09-15
+# Paper fund summary, 2026-09-16
 
-NAV US$92,068 | cum -7.93% | core bench -1.27% | cash bench +0.06% | drawdown 0.00% | open 1
+NAV US$92,079 | cum -7.92% | core bench -0.81% | cash bench +0.08% | drawdown 0.00% | open 1
 Flags: EYDAP:ATSE:NO_PRICE
 
 ## Limits
@@ -12,7 +12,7 @@ Flags: EYDAP:ATSE:NO_PRICE
 - Fast sleeve % NAV: 0.0% (ok)
 
 ## Positions held
-- EYDAP:ATSE qty 569 | MV None | P&L None | None NAV | catalyst in 15.0 d | close None
+- EYDAP:ATSE qty 569 | MV None | P&L None | None NAV | catalyst in 14.0 d | close None
 
 ## Catalysts and gates within 14 days
-- none
+- EYDAP:ATSE: 2026-09-30 (14.0 d)
