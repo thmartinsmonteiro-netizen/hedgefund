@@ -1,7 +1,7 @@
 name: daily-mark
 on:
   schedule:
-    - cron: "30 21 * * 1-5"
+    - cron: "0 9 * * 2-6"   # 06:00 Sao Paulo Tue-Sat; marks the previous business day
   workflow_dispatch:
 permissions:
   contents: write

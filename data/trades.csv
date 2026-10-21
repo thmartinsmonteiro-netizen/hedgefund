@@ -1,2 +1,3 @@
 date,memo_week,ticker,side,qty,multiplier,price_native,ccy,fx_to_usd,thesis,memo_ref,notes
 2026-09-09,2026-W37,EYDAP:ATSE,Buy,569,1,12.02,EUR,1.163873,First regulatory period after 17 frozen years; 2025 P&L contains none of the approved revenue step-up,2026-W37.md,Entry at 9 Sep close per Yahoo; memo W37 quoted the 4 Sep close of 12.28 as reference only
+2026-10-21,2026-W43,EYDAP:ATSE,Sell,569,1,13.94,EUR,1.122965,Exit: H1 2026 run-rate EBITDA about EUR85m vs EUR150m underwritten; price above revised own fair value of about EUR10.7; catalyst date passed,2026-W43.md,PRICE 13.94 = Boerse Stuttgart quote 21 Oct 2026 as proxy for the ATSE close; replace with the ATSE 21 Oct close once the backfill lands and keep the date

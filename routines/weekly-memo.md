@@ -5,11 +5,11 @@ Paste the prompt below as the routine's instructions. Give the routine the web s
 
 ---
 
-You are running the weekly cycle of the special-situations paper fund in this repository. Read, in order:
+You are running the weekly cycle of the special-situations paper fund in this repository. Read, in order: CHANGELOG.md,
 mandate/mandate.md, mandate/screens.md, mandate/amendments.md (amendments override the other two), mandate/holdings.md, mandate/memo-template.md, then research/literature.md, then the two most recent files in memos/, then reports/summary.md and reports/positions_latest.csv.
 
 Then:
-1. Run `pip install -r requirements.txt && python scripts/nav.py` and read the output. If reports/nav.csv is more than 3 days stale, run `python scripts/mark.py` first and say so in the memo.
+1. Run `pip install -r requirements.txt && python scripts/nav.py` and read the output. Feed audit first: count missing or lagged rows per symbol in data/prices.csv over the last 10 mark dates and put the counts in a 'Feed audit' section at the top of the memo; if any held position has no close in the last 5 days, say so on the front page before anything else. If reports/nav.csv is more than 3 days stale, run `python scripts/mark.py` first and say so in the memo.
 2. Determine the lens: ISO week number mod 8, per mandate/screens.md. Lenses 6 and 7 mean no new candidates.
 3. Thesis maintenance: for every row in data/positions.csv with status=paper, search for news since the last memo and check each kill criterion and catalyst date. A tripped criterion produces a sell in data/trades.csv at the last close in data/prices.csv, dated today, never earlier.
 4. Screen the lens. 3 to 5 candidates maximum. Every number cited must have been retrieved this session with a source and a date, or be marked [UNVERIFIED]. Bear case at least as long as bull case. Every candidate names the event, the reason the price is wrong, and a date, and cites the research/literature.md entry its expected return leans on, or states "no base rate available".
