@@ -247,3 +247,4 @@ date,symbol,close,close_date,source,status
 2026-10-21,IWDA.L,147.259995,2026-10-21,yfinance,ok
 2026-10-21,LIGT3.SA,3.68,2026-10-21,yfinance,ok
 2026-10-21,SAPR11.SA,41.110001,2026-10-21,yfinance,ok
+2026-10-21,BASC.L,1640.0,2026-10-21,manual,ok

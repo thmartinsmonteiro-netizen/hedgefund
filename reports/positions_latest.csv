@@ -2,3 +2,4 @@ ticker,name,instrument,status,sleeve,country,qty,cost_basis_usd,last_close,close
 EYDAP:ATSE,Athens Water Supply & Sewerage,equity,closed,Satellite,Greece,0,,13.96,2026-10-21,,,,,15.3,0.096,2026-09-30,-21.0,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27
 SAPR11:B3,Sanepar,equity,watchlist,Satellite,Brazil,0,,41.110001,2026-10-21,,,,,,,,,n/a until dated
 LIGT3:B3,Light S.A.,equity,gated,Satellite,Brazil,0,,3.68,2026-10-21,,,,,,,,,
+BASC:LSE,Brown Advisory US Smaller Companies (investment trust),equity,watchlist,Fast,United Kingdom,0,,1640.0,2026-10-21,,,,,1689.0,0.0299,2026-12-31,71.0,"Entry trigger, not kill: discount >= 5% to last published NAV with scheme on track. If entered: scheme voted down or withdrawn; circular not out by 2026-11-30; discount < 1%"
