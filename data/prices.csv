@@ -279,3 +279,4 @@ date,symbol,close,close_date,source,status
 2026-10-27,IWDA.L,146.630005,2026-10-27,yfinance,ok
 2026-10-27,LIGT3.SA,2.6,2026-10-27,yfinance,ok
 2026-10-27,SAPR11.SA,33.669998,2026-10-27,yfinance,ok
+2026-10-28,LNZ.VI,10.70,2026-10-28,manual,ok

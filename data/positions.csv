@@ -2,3 +2,7 @@ ticker,yahoo_symbol,name,instrument,multiplier,underlying,expiry,ccy,sleeve,coun
 EYDAP:ATSE,EYDAP.AT,Athens Water Supply & Sewerage,equity,1,,,EUR,Satellite,Greece,5,15.30,First H1 under RAAEY revenue cap,2026-09-30,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27,closed
 SAPR11:B3,SAPR11.SA,Sanepar,equity,1,,,BRL,Satellite,Brazil,5,,Court ruling on AGEPAR precatorio decision,,n/a until dated,watchlist
 LIGT3:B3,LIGT3.SA,Light S.A.,equity,1,,,BRL,Satellite,Brazil,5,,RJ closure + capitalisation; emergence ND/EBITDA < 2.5x,,n/a,gated
+LNZ:VIE,LNZ.VI,Lenzing AG,equity,1,,,EUR,Fast,Austria,4,12.90,Post-rights overhang clearance; Q3 2026 results 5 Nov; mandatory exit 9 Dec 2026,2026-12-09,Q3 EBITDA < EUR90m; further capital/covenant event; user rules hybrids count as debt; mandatory exit 2026-12-09,paper
+PNN:LSE,PNN.L,Pennon Group,equity,1,,,GBP,Fast,United Kingdom,4,,Post-rights overhang; H1 FY27 results 1 Dec 2026; gated on leverage exclusion (7.4x pro forma),2026-12-01,n/a until user rules on regulated-utility leverage (memo W44 q1); Yahoo quotes in pence,gated
+ERA:PAR,ERA.PA,Eramet,equity,1,,,EUR,Fast,France,4,,EUR500m rights issue; terms expected after 29 Oct Q3 release; entry only during/after rights period,,n/a until prospectus; leverage test on prospectus balance sheet,watchlist
+YCA:AIM,YCA.L,Yellow Cake plc,equity,1,,,GBP,Fast,United Kingdom,4,,MSCI non-operating-company deletion; final list 11 Nov; effective close 30 Nov 2026,2026-11-30,n/a until final list and NAV discount checked; Yahoo quotes in pence,watchlist
