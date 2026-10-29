@@ -286,4 +286,5 @@ date,symbol,close,close_date,source,status
 2026-10-28,GBPUSD=X,1.33063,2026-10-28,yfinance,ok
 2026-10-28,IWDA.L,146.820007,2026-10-28,yfinance,ok
 2026-10-28,LIGT3.SA,2.37,2026-10-28,yfinance,ok
+2026-10-28,LNZ.VI,10.70,2026-10-28,manual,ok
 2026-10-28,SAPR11.SA,32.419998,2026-10-28,yfinance,ok

@@ -2,3 +2,7 @@ ticker,name,instrument,status,sleeve,country,qty,cost_basis_usd,last_close,close
 EYDAP:ATSE,Athens Water Supply & Sewerage,equity,closed,Satellite,Greece,0,,13.82,2026-10-28,,,,,15.3,0.1071,2026-09-30,-28.0,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27
 SAPR11:B3,Sanepar,equity,watchlist,Satellite,Brazil,0,,32.419998,2026-10-28,,,,,,,,,n/a until dated
 LIGT3:B3,Light S.A.,equity,gated,Satellite,Brazil,0,,2.37,2026-10-28,,,,,,,,,
+LNZ:VIE,Lenzing AG,equity,paper,Fast,Austria,254,3048.97,10.7,2026-10-28,3024.82,-24.15,-0.0079,0.0298,12.9,0.2056,2026-12-09,42.0,Q3 EBITDA < EUR90m; further capital/covenant event; user rules hybrids count as debt; mandatory exit 2026-12-09
+PNN:LSE,Pennon Group,equity,gated,Fast,United Kingdom,0,,,,,,,,,,2026-12-01,34.0,n/a until user rules on regulated-utility leverage (memo W44 q1); Yahoo quotes in pence
+ERA:PAR,Eramet,equity,watchlist,Fast,France,0,,,,,,,,,,,,n/a until prospectus; leverage test on prospectus balance sheet
+YCA:AIM,Yellow Cake plc,equity,watchlist,Fast,United Kingdom,0,,,,,,,,,,2026-11-30,33.0,n/a until final list and NAV discount checked; Yahoo quotes in pence
