@@ -1,4 +1,5 @@
 ticker,yahoo_symbol,name,instrument,multiplier,underlying,expiry,ccy,sleeve,country,lens,target_price,catalyst,catalyst_date,kill_criteria,status
 EYDAP:ATSE,EYDAP.AT,Athens Water Supply & Sewerage,equity,1,,,EUR,Satellite,Greece,5,15.30,First H1 under RAAEY revenue cap,2026-09-30,H1 rev < EUR200m; pricing reopened by RAAEY/ministry; net debt before FY27,closed
 SAPR11:B3,SAPR11.SA,Sanepar,equity,1,,,BRL,Satellite,Brazil,5,,Court ruling on AGEPAR precatorio decision,,n/a until dated,watchlist
-LIGT3:B3,LIGT3.SA,Light S.A.,equity,1,,,BRL,Satellite,Brazil,5,,RJ closure + capitalisation; emergence ND/EBITDA < 2.5x,,n/a,gated
+LIGT3:B3,LIGT3.SA,Light S.A.,equity,1,,,BRL,Satellite,Brazil,5,,3Q26 balance sheet: emergence ND/EBITDA < 2.5x (gate test); RJ closed 2026-09-09,2026-11-12,n/a,gated
+METR:BYMA,METR.BA,Metrogas,equity,1,,,ARS,Satellite,Argentina,5,3036,Mandatory tender for minorities after Edenor takes control (control price US$1.958/sh),2027-03-31,OPA price below control price; licence not ratified by 2027-02-28; Edenor closing abandoned,watchlist
