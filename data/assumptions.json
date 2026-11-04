@@ -26,7 +26,8 @@
     "EUR": "EURUSD=X",
     "BRL": "BRLUSD=X",
     "GBP": "GBPUSD=X",
-    "CHF": "CHFUSD=X"
+    "CHF": "CHFUSD=X",
+    "ARS": "ARSUSD=X"
   },
   "stale_after_days": 5,
   "_notes": "Cost and cash-rate figures are placeholders from the first session; replace with IBKR actuals.",
