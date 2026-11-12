@@ -1,6 +1,6 @@
-# Paper fund summary, 2026-11-10
+# Paper fund summary, 2026-11-11
 
-NAV US$101,539 | cum +1.54% | core bench -2.44% | cash bench +0.67% | drawdown 0.00% | open 0
+NAV US$101,550 | cum +1.55% | core bench -1.23% | cash bench +0.68% | drawdown 0.00% | open 0
 Flags: none
 
 ## Limits
@@ -9,4 +9,4 @@ Flags: none
 ## Positions held
 
 ## Catalysts and gates within 14 days
-- EYDAP:ATSE: 2026-09-30 (-41.0 d)
+- EYDAP:ATSE: 2026-09-30 (-42.0 d)
