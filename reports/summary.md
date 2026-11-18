@@ -9,4 +9,4 @@ Flags: none
 ## Positions held
 
 ## Catalysts and gates within 14 days
-- EYDAP:ATSE: 2026-09-30 (-48.0 d)
+- none
